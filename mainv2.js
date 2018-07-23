@@ -103,6 +103,29 @@ function loadPokemon1() {
 
 // Bulbasaur
 
+document.getElementById('top-buld-outline').addEventListener('mouseover', onHover2);
+document.getElementById('top-buld-outline').addEventListener('click', onClick2, loadPokemon2);
+document.getElementById('top-buld-outline').addEventListener('click',loadPokemon2);
+document.getElementById('top-buld-outline').addEventListener('mouseout', hoverOut2);
+
+
+function onHover2() {
+  document.getElementById('top-buld-outline').style.opacity=0.5;
+  document.getElementById('outline2').style.opacity=0.5;
+}
+function onClick2() {
+  document.getElementById('top-buld-outline').style.opacity=0;
+  document.getElementById('outline2').style.opacity=1;
+}
+
+function hoverOut2() {
+  document.getElementById('top-buld-outline').style.opacity=0;
+  document.getElementById('outline2').style.opacity=1;
+
+}
+
+
+
 function loadPokemon2() {
  var newPoke2 = new XMLHttpRequest();
  newPoke2.onreadystatechange = function() {
@@ -112,11 +135,11 @@ function loadPokemon2() {
      newPokemon(pokedata2.name, pokedata2.stats[5].base_stat, pokedata2.stats[4].base_stat, pokedata2.stats[3].base_stat, [pokedata2.abilities[0].ability.name, pokedata2.abilities[1].ability.name])
 
      name: document.getElementById("bname").innerHTML =  pokedata2.name;
-     hp: document.getElementById("bhp").innerHTML = '<b>HP  : </b> ' + pokedata2.stats[5].base_stat;
-     attack: document.getElementById("battack").innerHTML = '<b>Attack :   </b>' + pokedata2.stats[4].base_stat;
-     defense: document.getElementById("bdefense").innerHTML = '<b>Defense :</b> ' + pokedata2.stats[3].base_stat;
-     abilities: document.getElementById("babilities").innerHTML ='<b>Abilities : </b>'+ pokedata2.abilities[0].ability.name;
-     abilities2: document.getElementById("babilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata2.abilities[1].ability.name;
+     hp: document.getElementById("bhp").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspHP  : </b> ' + pokedata2.stats[5].base_stat;
+     attack: document.getElementById("battack").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspAttack :   </b>' + pokedata2.stats[4].base_stat;
+     defense: document.getElementById("bdefense").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspDefense :</b> ' + pokedata2.stats[3].base_stat;
+     abilities: document.getElementById("babilities").innerHTML ='<b>&nbsp &nbsp &nbsp &nbspAbilities : </b>'+ pokedata2.abilities[0].ability.name;
+     abilities2: document.getElementById("babilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata2.abilities[1].ability.name;
 
 
      console.log(pokedata2);
