@@ -29,13 +29,26 @@ var trainer = {
 
 // Jigglypuff
 
-document.getElementById('top-jig-outline').addEventListener('onClick', hoverOver);
+document.getElementById('top-jig-outline').addEventListener('mouseover', onHover);
+document.getElementById('top-jig-outline').addEventListener('click', onClick, loadPokemon1);
+document.getElementById('top-jig-outline').addEventListener('click',loadPokemon1);
+document.getElementById('top-jig-outline').addEventListener('mouseout', hoverOut);
 
-function onClick() {
+
+function onHover() {
   document.getElementById('top-jig-outline').style.opacity=0.5;
+  document.getElementById('outline').style.opacity=0.5;
+}
+function onClick() {
+  document.getElementById('top-jig-outline').style.opacity=0;
   document.getElementById('outline').style.opacity=1;
 }
 
+function hoverOut() {
+  document.getElementById('top-jig-outline').style.opacity=0;
+  document.getElementById('outline').style.opacity=1;
+
+}
 
 
 // ************ https://www.quora.com/How-do-I-make-image-1-disappear-and-image-2-appear-on-mouse-click-momentarily-with-css
@@ -69,12 +82,12 @@ function loadPokemon1() {
      newPokemon(pokedata.name, pokedata.stats[5].base_stat, pokedata.stats[4].base_stat, pokedata.stats[3].base_stat, [pokedata.abilities[0].ability.name, pokedata.abilities[1].ability.name, pokedata.abilities[2].ability.name])
 
      name: document.getElementById("name").innerHTML =  pokedata.name;
-     hp: document.getElementById("hp").innerHTML = '<b>HP   :  </b>' + pokedata.stats[5].base_stat;
-     attack: document.getElementById("attack").innerHTML = '<b>Attack :  </b> ' + pokedata.stats[4].base_stat;
-     defense: document.getElementById("defense").innerHTML = '<b>Defense : </b>' + pokedata.stats[3].base_stat;
-     abilities: document.getElementById("abilities").innerHTML ='<b>Abilities : </b> '+ pokedata.abilities[0].ability.name;
-     abilities2: document.getElementById("abilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[1].ability.name;
-     abilities3: document.getElementById("abilities3").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[2].ability.name;
+     hp: document.getElementById("hp").innerHTML = '<b> &nbsp &nbsp &nbsp &nbspHP   :  </b>' + pokedata.stats[5].base_stat;
+     attack: document.getElementById("attack").innerHTML = '<b>   &nbsp &nbsp &nbsp &nbspAttack :  </b> ' + pokedata.stats[4].base_stat;
+     defense: document.getElementById("defense").innerHTML = '<b>  &nbsp &nbsp &nbsp &nbspDefense : </b>' + pokedata.stats[3].base_stat;
+     abilities: document.getElementById("abilities").innerHTML ='<b> &nbsp &nbsp &nbsp &nbspAbilities : </b> '+ pokedata.abilities[0].ability.name;
+     abilities2: document.getElementById("abilities2").innerHTML = '  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[1].ability.name;
+     abilities3: document.getElementById("abilities3").innerHTML = '  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[2].ability.name;
 
      console.log(pokedata);
    }
