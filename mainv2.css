@@ -23,7 +23,8 @@
   padding-left: 11px;
   padding-bottom: 145px;
   margin-left: 85px;
-  margin-right: 128px; }
+  margin-right: 117px;
+ }
 
 .outline {
   border: thin solid black;
@@ -50,14 +51,14 @@
     font-size: 30px;
   } */
 
-  .top-jig-outline {
-    border: thin solid black;
-    background-color: rgb(53, 130, 232);
-    height: 60%;
-    margin-top: 18%;
-    margin-left: -28.2%;
-    width: 25.8%;
-    }
+.top-jig-outline {
+  border: thin solid black;
+  background-color: rgb(53, 130, 232);
+  height: 60%;
+  margin-top: 18%;
+  margin-left: -28.2%;
+  width: 25.8%;
+  }
 
 #top-jig {
   /* width: 103%;
@@ -67,6 +68,23 @@
   width: 60%;
   height: 50%;
 }
+
+/* *********** */
+.is-hidden {
+	opacity: 0;
+	transition: 0.6s;
+	transform: scale(0);
+	pointer-events: none; // Do not allow clicking on the element.
+}
+
+.image-0 {
+	opacity: 1; // Make it visible
+	transition: 0.6s;
+	transform: scale(1); // Bring it back to normal
+	pointer-events: auto; // Make it clickable again
+}
+
+/* ***************** */
 
 
 .top-buld-outline {
@@ -85,22 +103,36 @@
   }
 
   #top-bulb {
-    width: 103%;
-    height: 94%;
+    /* width: 103%;
+    height: 94%; */
+    margin-top: 27%;
+    margin-left:19%;
+    width: 60%;
+    height: 50%;
   }
 
   .top-char-outline {
-    border: thin solid black;
+    /* border: thin solid black;
     background-color: rgb(53, 130, 232);
     height: 55.8%;
     margin-top: 16.3%;
     margin-left: 25.25%;
-    width: 26%;
+    width: 26%; */
+    border: thin solid black;
+    background-color: rgb(53, 130, 232);
+    height: 60%;
+    margin-top: 18%;
+    margin-left: 25.8%;
+    width: 25.88%;
     }
 
     #top-char {
-      width: 103%;
-      height: 94%;
+      /* width: 103%;
+      height: 94%; */
+      margin-top: 27%;
+      margin-left:19%;
+      width: 60%;
+      height: 50%;
     }
 
   .centered {
