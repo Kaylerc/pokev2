@@ -29,6 +29,37 @@ var trainer = {
 
 // Jigglypuff
 
+document.getElementById('top-jig-outline').addEventListener('onClick', hoverOver);
+
+function onClick() {
+  document.getElementById('top-jig-outline').style.opacity=0.5;
+  document.getElementById('outline').style.opacity=1;
+}
+
+
+
+// ************ https://www.quora.com/How-do-I-make-image-1-disappear-and-image-2-appear-on-mouse-click-momentarily-with-css
+
+// var elementHide = document.getElementsByClassName("top-jig-outline");
+// 	elementShow = document.getElementsByClassName("outline");
+//
+// // This is the onclick event + the functionality you need
+// elementHide[0].onclick = function() {
+// 	// Simple check to add it only once.
+// 	if( ! hasClass(elementHide[0], 'is-hidden'))
+// 		elementHide[0].className += " is-hidden";
+//
+// 	elementShow[0].classList.remove("is-hidden");
+// };
+//
+// // Simple function to see if class exists.
+// function hasClass(element, cls) {
+//     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+
+// ******************
+
+
+
 function loadPokemon1() {
  var newPoke = new XMLHttpRequest();
  newPoke.onreadystatechange = function() {
