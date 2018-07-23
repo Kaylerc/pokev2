@@ -156,6 +156,29 @@ function loadPokemon2() {
 
 // Charmander
 
+document.getElementById('top-char-outline').addEventListener('mouseover', onHover3);
+document.getElementById('top-char-outline').addEventListener('click', onClick3, loadPokemon3);
+document.getElementById('top-char-outline').addEventListener('click',loadPokemon3);
+document.getElementById('top-char-outline').addEventListener('mouseout', hoverOut3);
+
+
+function onHover3() {
+  document.getElementById('top-char-outline').style.opacity=0.5;
+  document.getElementById('outline3').style.opacity=0.5;
+}
+function onClick3() {
+  document.getElementById('top-char-outline').style.opacity=0;
+  document.getElementById('outline3').style.opacity=1;
+}
+
+function hoverOut3() {
+  document.getElementById('top-char-outline').style.opacity=0;
+  document.getElementById('outline3').style.opacity=1;
+
+}
+
+
+
 function loadPokemon3() {
  var newPoke3 = new XMLHttpRequest();
  newPoke3.onreadystatechange = function() {
@@ -165,11 +188,11 @@ function loadPokemon3() {
      newPokemon(pokedata3.name, pokedata3.stats[5].base_stat, pokedata3.stats[4].base_stat, pokedata3.stats[3].base_stat, [pokedata3.abilities[0].ability.name, pokedata3.abilities[1].ability.name])
 
      name: document.getElementById("cname").innerHTML =  pokedata3.name;
-     hp: document.getElementById("chp").innerHTML = '<b>HP  </b></b> :  ' + pokedata3.stats[5].base_stat;
-     attack: document.getElementById("cattack").innerHTML = '<b>Attack : </b>    ' + pokedata3.stats[4].base_stat;
-     defense: document.getElementById("cdefense").innerHTML = '<b>Defense :</b> ' + pokedata3.stats[3].base_stat;
-     abilities: document.getElementById("cabilities").innerHTML ='<b>Abilities</b> :  '+ pokedata3.abilities[0].ability.name;
-     abilities2: document.getElementById("cabilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata3.abilities[1].ability.name;
+     hp: document.getElementById("chp").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspHP  </b></b> :  ' + pokedata3.stats[5].base_stat;
+     attack: document.getElementById("cattack").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspAttack : </b>    ' + pokedata3.stats[4].base_stat;
+     defense: document.getElementById("cdefense").innerHTML = '<b>&nbsp &nbsp &nbsp &nbspDefense :</b> ' + pokedata3.stats[3].base_stat;
+     abilities: document.getElementById("cabilities").innerHTML ='<b>&nbsp &nbsp &nbsp &nbspAbilities</b> :  '+ pokedata3.abilities[0].ability.name;
+     abilities2: document.getElementById("cabilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata3.abilities[1].ability.name;
 
 
      console.log(pokedata3);
