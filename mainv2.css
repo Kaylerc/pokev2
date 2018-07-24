@@ -216,9 +216,13 @@ html {
   top: -12px;
   left: 12px; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   body {
     overflow-x: hidden; }
+
+    #imgCon{
+          margin-left: -250px;
+    }
 
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
@@ -234,9 +238,6 @@ html {
     width: 228%;
     padding-right: 2px;
     margin-left: 144px; }
-
-  #top img {
-    /* background-color: #76D950; */
-    margin-left: -127px; } }
+}
 
 /*# sourceMappingURL=main.css.map */

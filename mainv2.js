@@ -37,16 +37,16 @@ document.getElementById('top-jig-outline').addEventListener('mouseout', hoverOut
 
 function onHover() {
   document.getElementById('top-jig-outline').style.opacity=0.5;
-  document.getElementById('outline').style.opacity=0.5;
+  document.getElementById('outline1').style.opacity=0.5;
 }
 function onClick() {
   document.getElementById('top-jig-outline').style.opacity=0;
-  document.getElementById('outline').style.opacity=1;
+  document.getElementById('outline1').style.opacity=1;
 }
 
 function hoverOut() {
   document.getElementById('top-jig-outline').style.opacity=0;
-  document.getElementById('outline').style.opacity=1;
+  document.getElementById('outline1').style.opacity=1;
 
 }
 
