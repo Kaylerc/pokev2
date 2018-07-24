@@ -64,9 +64,10 @@
 #top-jig-outline {
   border: thin solid black;
   background-color: rgb(53, 130, 232);
-  height: 60%;
-  margin-top: 17.6%;
+  height: 55.6%;
+  margin-top: 16.3%;
   margin-left: -28.2%;
+  margin-bottom: 15%;
   width: 25.8%;
   }
 
@@ -99,8 +100,8 @@
   width: 26%; */
   border: thin solid black;
   background-color: rgb(53, 130, 232);
-  height: 60%;
-  margin-top: 17.6%;
+  height: 55.6%;
+  margin-top: 16.3%;
   margin-left: -1.2%;
   width: 26%;
   }
@@ -123,8 +124,8 @@
     width: 26%; */
     border: thin solid black;
     background-color: rgb(53, 130, 232);
-    height: 60%;
-    margin-top: 17.6%;
+    height: 55.6%;
+    margin-top: 16.3%;
     margin-left: 25.9%;
     width: 25.88%;
     }
