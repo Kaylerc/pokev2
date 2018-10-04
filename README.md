@@ -1,7 +1,6 @@
 # Pokedex 2.0
 
-https://kaylerc.github.io/Pokedex-2.0/index1v2.html
-
+https://kaylerc.github.io/Pokedex-2.0/
 ___________________________________________________________________________________________
 
 ## Purpose
