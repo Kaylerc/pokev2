@@ -51,28 +51,6 @@ function hoverOut() {
 }
 
 
-// ************ https://www.quora.com/How-do-I-make-image-1-disappear-and-image-2-appear-on-mouse-click-momentarily-with-css
-
-// var elementHide = document.getElementsByClassName("top-jig-outline");
-// 	elementShow = document.getElementsByClassName("outline");
-//
-// // This is the onclick event + the functionality you need
-// elementHide[0].onclick = function() {
-// 	// Simple check to add it only once.
-// 	if( ! hasClass(elementHide[0], 'is-hidden'))
-// 		elementHide[0].className += " is-hidden";
-//
-// 	elementShow[0].classList.remove("is-hidden");
-// };
-//
-// // Simple function to see if class exists.
-// function hasClass(element, cls) {
-//     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-
-// ******************
-
-
-
 function loadPokemon1() {
  var newPoke = new XMLHttpRequest();
  newPoke.onreadystatechange = function() {
@@ -205,3 +183,25 @@ function loadPokemon3() {
  // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/4/", true);
  newPoke3.send();
 }
+
+
+
+// ************ https://www.quora.com/How-do-I-make-image-1-disappear-and-image-2-appear-on-mouse-click-momentarily-with-css
+
+// var elementHide = document.getElementsByClassName("top-jig-outline");
+// 	elementShow = document.getElementsByClassName("outline");
+//
+// // This is the onclick event + the functionality you need
+// elementHide[0].onclick = function() {
+// 	// Simple check to add it only once.
+// 	if( ! hasClass(elementHide[0], 'is-hidden'))
+// 		elementHide[0].className += " is-hidden";
+//
+// 	elementShow[0].classList.remove("is-hidden");
+// };
+//
+// // Simple function to see if class exists.
+// function hasClass(element, cls) {
+//     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+
+// ******************
